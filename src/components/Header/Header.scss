@@ -1,0 +1,17 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+}
