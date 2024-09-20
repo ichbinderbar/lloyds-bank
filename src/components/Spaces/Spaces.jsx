@@ -1,10 +1,18 @@
 import "./Spaces.scss";
+import gaugeIcon from "../../assets/icons/gauge.png";
+import piggyIcon from "../../assets/icons/piggy-bank-solid.svg";
+import cardIcon from "../../assets/icons/credit-card-regular.svg";
 
 export default function Spaces() {
   return (
     <section className="spaces">
-      <article className="spaces__card">
-        <img src="" alt="" className="spaces__card-icon" />
+      <div className="spaces__title">My Spaces</div>
+      <article className="spaces__card spaces__card--top">
+        <div className="spaces__icon-container">
+          <div className="spaces__creditcard">
+            <img src={cardIcon} alt="" className="spaces__card-icon" />
+          </div>
+        </div>
         <div className="spaces__card-content">
           <h3 className="spaces__card-header">Everyday</h3>
           <p className="spaces__card-text">
@@ -14,7 +22,11 @@ export default function Spaces() {
       </article>
 
       <article className="spaces__card">
-        <img src="" alt="" className="spaces__card-icon" />
+        <div className="spaces__icon-container">
+          <div className="spaces__pig">
+            <img src={piggyIcon} alt="" className="spaces__card-icon" />
+          </div>
+        </div>
         <div className="spaces__card-content">
           <h3 className="spaces__card-header">Save & Invest</h3>
           <p className="spaces__card-text">
@@ -24,7 +36,11 @@ export default function Spaces() {
       </article>
 
       <article className="spaces__card">
-        <img src="" alt="" className="spaces__card-icon" />
+        <div className="spaces__icon-container">
+          <div className="spaces__gauge">
+            <img src={gaugeIcon} alt="" className="spaces__card-icon" />
+          </div>
+        </div>
         <div className="spaces__card-content">
           <h3 className="spaces__card-header">Borrow</h3>
           <p className="spaces__card-text">
