@@ -23,7 +23,7 @@ export default function Footer() {
         <p className="footer__text">Payments</p>
       </div>
       <div className="footer__link">
-        <img src={paymentsIcon} alt="" className="footer__icon" />
+        <img src={searchIcon} alt="" className="footer__icon" />
         <p className="footer__text">Search</p>
       </div>
       <div className="footer__link">
