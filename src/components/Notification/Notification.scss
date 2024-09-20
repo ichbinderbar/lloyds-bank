@@ -3,12 +3,9 @@
 .notification {
   display: flex;
   flex-direction: column;
-  border: solid 3px $border-warning-color;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding: 1rem 2rem;
   &__icon {
     width: 15px;
   }
