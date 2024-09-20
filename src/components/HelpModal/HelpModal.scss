@@ -2,20 +2,42 @@
 @use "../../styles/typography";
 
 .modal {
-  background-color: $primary-background-colour;
-  font-family: "Inter";
+  height: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary-background-colour;
+    font-family: "Inter";
+    margin: 0 auto;
+  }
 
   &__header {
+    max-width: 366px;
     font-size: 1.25rem;
     font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 140%;
   }
 
   &__subheader {
     @extend .modal__header;
+    margin-bottom: 6rem;
   }
 
   &__close {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    align-self: flex-start;
     width: 1rem;
+  }
+
+  &__help-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
 
   &__card-container {
@@ -23,7 +45,8 @@
     align-items: center;
     gap: 2.5rem;
     background-color: $primary-box-colour;
-    width: 21.75rem;
+    width: 375px;
+    height: 5.5rem;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #000;
