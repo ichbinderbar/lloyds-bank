@@ -1,3 +1,6 @@
+import "./Notification.scss";
+import icon from "../../assets/icons/shield-halved-solid.svg";
+
 export default function Notification() {
   return (
     <div className="notification">
