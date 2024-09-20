@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.scss";
 import patients from "../../data/patients.json";
 import CostumerCard from "../../components/CostumerCard/CostumerCard";
 import SearchBar from "../../components/SearchBar/SearchBar";
