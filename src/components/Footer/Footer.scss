@@ -1,5 +1,27 @@
 @use "../../styles/colors" as *;
+@use "../../styles/typography";
 
 .footer {
+  font-family: "Inter";
   background-color: $primary-box-colour;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+
+  &__icon {
+    width: 20px;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
 }
