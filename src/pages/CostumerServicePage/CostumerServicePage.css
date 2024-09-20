@@ -1,0 +1,53 @@
+.costumer-service-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+  color: #000000;
+}
+.costumer-service-page .search-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+.costumer-service-page .costumer-card {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+.costumer-service-page .get-tips-button {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #06df4e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.costumer-service-page .get-tips-button:hover {
+  background-color: #05ad3d;
+}
+.costumer-service-page .symptom-list {
+  margin-top: 16px;
+  width: 100%;
+  max-width: 600px;
+}
+.costumer-service-page .symptom-list ul {
+  list-style-type: disc;
+  padding-left: 16px;
+  color: #847b7b;
+}
+.costumer-service-page .symptom-list ul li {
+  padding: 8px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #cecaca;
+}
+.costumer-service-page .symptom-list ul li:last-child {
+  border-bottom: none;
+}/*# sourceMappingURL=CostumerServicePage.css.map */

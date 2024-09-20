@@ -8,7 +8,7 @@ import cardsIcon from "../../assets/icons/credit-card-regular.svg";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__link">
+      <div className="footer__link footer__link--active">
         <img src={homeIcon} alt="" className="footer__icon" />
         <p className="footer__text">
           <strong>Home</strong>

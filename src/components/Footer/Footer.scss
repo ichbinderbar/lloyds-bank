@@ -2,6 +2,8 @@
 @use "../../styles/typography";
 
 .footer {
+  position: fixed;
+  bottom: 0;
   font-family: "Inter";
   background-color: $primary-box-colour;
   display: flex;
@@ -16,8 +18,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
-    padding-bottom: 2rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    &--active {
+      border-top: 4px solid $primary-button-color;
+    }
   }
 
   &__text {

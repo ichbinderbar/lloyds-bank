@@ -1,0 +1,67 @@
+.spaces {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.spaces__pig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffb269;
+}
+.spaces__gauge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #a09fff;
+  padding-bottom: 0.5rem;
+}
+.spaces__creditcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #6cf479;
+}
+.spaces__card-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.spaces__card {
+  display: flex;
+  gap: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-bottom: 1.5px solid #f5f5f5;
+}
+.spaces__card--top {
+  border-radius: 20px 20px 0px 0px;
+}
+.spaces__card-content {
+  font-size: 1rem;
+}
+.spaces__card-header {
+  margin: 0;
+  font-weight: 600;
+}
+.spaces__card-text {
+  margin: 0;
+  line-height: 140%;
+  font-weight: 400;
+}
+.spaces__icon-container {
+  display: flex;
+  align-items: center;
+}
+.spaces__title {
+  padding-bottom: 1rem;
+  font-weight: 600;
+}/*# sourceMappingURL=Spaces.css.map */

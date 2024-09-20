@@ -1,0 +1,13 @@
+.home {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.home__main-container {
+  border: solid 3px #ffa841;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+.home__main-container--hidden {
+  border: solid transparent;
+}/*# sourceMappingURL=Home.css.map */

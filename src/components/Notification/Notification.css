@@ -1,0 +1,19 @@
+.notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-top: solid 3px #ffa841;
+}
+.notification__icon {
+  width: 15px;
+}
+.notification__button {
+  border: solid 3px black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #06df4e;
+  cursor: pointer;
+}/*# sourceMappingURL=Notification.css.map */

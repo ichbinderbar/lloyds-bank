@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/fonts/inter-regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/fonts/inter-medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/fonts/inter-semi-bold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/fonts/inter-bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  font-family: "Inter";
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.footer__icon {
+  width: 20px;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+.footer__link--active {
+  border-top: 4px solid #06df4e;
+}
+.footer__text {
+  margin: 0;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=Footer.css.map */
