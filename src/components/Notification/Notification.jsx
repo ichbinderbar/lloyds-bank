@@ -60,8 +60,11 @@ export default function Notification({ setUpcomingPayments }) {
             Please choose how you'd like us to support you:
           </h2>
 
-          <div className="modal__help-cards" onClick={handleClick}>
-            <article className="modal__card-container">
+          <div className="modal__help-cards">
+            <article
+              className="modal__card-container modal__card-container--progress"
+              onClick={handleClick}
+            >
               <img src={progressIcon} alt="" className="modal__card-icon" />
               <div className="modal__card-content">
                 <h3 className="modal__card-header">View Progress Reports</h3>
