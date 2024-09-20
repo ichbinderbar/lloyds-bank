@@ -3,4 +3,56 @@
 
 .payments {
   background: $primary-background-colour;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__title {
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__box {
+    background-color: $primary-box-colour;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 20px;
+  }
+
+  &__box-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  &__info-title {
+    font-weight: 600;
+  }
+
+  &__info-details {
+    font-weight: 600;
+  }
+
+  &__info-data {
+    font-weight: 400;
+  }
+
+  &__button {
+    border: 2px solid $primary-font-color;
+    border-radius: 12px;
+    padding: 0.3rem;
+    height: fit-content;
+    font-size: smaller;
+    align-self: end;
+  }
+
+  &__button-highlight {
+    background-color: $primary-button-color;
+  }
+
+  &__img {
+    width: 100%;
+    padding: 0;
+  }
 }

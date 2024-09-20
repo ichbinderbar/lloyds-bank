@@ -1,4 +1,4 @@
-// import "./UpcomingPayments.scss";
+import "./UpcomingPayments.scss";
 import timeBarElec from "../../assets/images/elec-progress-bar.png";
 import timeBarRent from "../../assets/images/rent-progress-bar.png";
 import { Link } from "react-router-dom";
@@ -23,15 +23,11 @@ export default function UpcomingPayments() {
               </span>{" "}
             </div>
           </div>
-          <Link className="payments__button">Need Support?</Link>
+          <Link className="payments__button payments__button-highlight">
+            Need Support?
+          </Link>
         </div>
-        <div className="payments__img-div">
-          <img
-            src={timeBarElec}
-            alt="Yellow timebar"
-            className="payments__img"
-          />
-        </div>
+        <img src={timeBarElec} alt="Yellow timebar" className="payments__img" />
       </div>
 
       <div className="payments__box">
@@ -52,13 +48,11 @@ export default function UpcomingPayments() {
           </div>
           <Link className="payments__button">Pay now?</Link>
         </div>
-        <div className="payments__img-div">
-          <img
-            src={timeBarRent}
-            alt="Turquoise timebar"
-            className="payments__img"
-          />
-        </div>
+        <img
+          src={timeBarRent}
+          alt="Turquoise timebar"
+          className="payments__img"
+        />
       </div>
     </section>
   );
