@@ -10,8 +10,12 @@ import Modal from "react-modal";
 import { useState } from "react";
 Modal.setAppElement("#root");
 
-export default function Notification() {
+export default function Notification({ setUpcomingPayments }) {
   const [modalIsOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setUpcomingPayments(true);
+  };
 
   const openModal = (helpCta) => {
     setIsOpen(true);
@@ -56,7 +60,7 @@ export default function Notification() {
             Please choose how you'd like us to support you:
           </h2>
 
-          <div className="modal__help-cards">
+          <div className="modal__help-cards" onClick={handleClick}>
             <article className="modal__card-container">
               <img src={progressIcon} alt="" className="modal__card-icon" />
               <div className="modal__card-content">
