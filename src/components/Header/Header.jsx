@@ -13,16 +13,20 @@ export default function Header() {
           className="header__img header__img-mail"
         />
         <h1 className="header__title">Hi Malik</h1>
-        <img
-          src={questionIcon}
-          alt="question mark icon"
-          className="header__img header__img-question"
-        />
-        <img
-          src={profileIcon}
-          alt="human profile icon"
-          className="header__img header__img-profile"
-        />
+        <div className="header__container-right">
+          <div className="header__img-question-div">
+            <img
+              src={questionIcon}
+              alt="question mark icon"
+              className="header__img header__img-question"
+            />
+          </div>
+          <img
+            src={profileIcon}
+            alt="human profile icon"
+            className="header__img header__img-profile"
+          />
+        </div>
       </div>
       <div className="header__botton">
         <span className="header__button header__button--clicked"> Summary</span>
