@@ -1,0 +1,13 @@
+@use "../../styles/colors" as *;
+
+.main-account-overview {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 3px $border-warning-color;
+  justify-content: space-between;
+  padding: 0.5rem;
+  &__details {
+  }
+  &__balance {
+  }
+}
