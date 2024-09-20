@@ -8,9 +8,9 @@ export default function Home() {
     <div className="home">
       <div className="home__main-container">
         <MainAccountOverview />
-        <UpcomingPayments />
-        {/* <Notification /> */}
+        <Notification />
       </div>
+      <UpcomingPayments />
     </div>
   );
 }

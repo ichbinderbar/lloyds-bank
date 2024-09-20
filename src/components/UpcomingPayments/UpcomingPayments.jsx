@@ -46,7 +46,7 @@ export default function UpcomingPayments() {
               </span>{" "}
             </div>
           </div>
-          <Link className="payments__button">Pay now?</Link>
+          <div className="payments__button">Pay now?</div>
         </div>
         <img
           src={timeBarRent}
