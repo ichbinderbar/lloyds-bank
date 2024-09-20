@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Notification from "../../components/Notification/Notification";
 import MainAccountOverview from "../../components/MainAccountOverview/MainAccountOverview";
+import UpcomingPayments from "../../components/UpcomingPayments/UpcomingPayments";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <MainAccountOverview />
         <Notification />
       </div>
+      <UpcomingPayments />
     </div>
   );
 }
