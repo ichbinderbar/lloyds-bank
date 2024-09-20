@@ -1,0 +1,53 @@
+$primary-background-colour: #f5f5f5;
+$primary-box-colour: #ffffff;
+$primary-button-color: #06df4e;
+$primary-font-color: #000000;
+$secondary-font-color: #847b7b;
+$spacing: 16px;
+
+.symptoms {
+  background-color: $primary-background-colour;
+  padding: $spacing;
+  max-width: 600px;
+  margin: $spacing auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing;
+  }
+
+  &__symptom {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: $primary-box-colour;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    .symptoms__checkbox {
+      margin-right: 8px;
+    }
+  }
+
+  &__cta {
+    margin-top: $spacing;
+    padding: $spacing;
+    background-color: $primary-button-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-button-color, 10%);
+    }
+  }
+}

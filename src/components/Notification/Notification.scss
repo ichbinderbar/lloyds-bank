@@ -6,15 +6,15 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: white;
   &__icon {
     width: 15px;
-  }
-  &__message {
   }
   &__button {
     border: solid 3px black;
     border-radius: 10px;
     padding: 0.5rem;
     background-color: $primary-button-color;
+    cursor: pointer;
   }
 }
