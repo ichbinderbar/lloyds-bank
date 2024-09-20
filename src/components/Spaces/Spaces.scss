@@ -1,0 +1,78 @@
+@use "../../styles/colors" as *;
+
+.spaces {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__pig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffb269;
+  }
+
+  &__gauge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #a09fff;
+  }
+
+  &__creditcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #6cf479;
+  }
+
+  &__card-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__card {
+    display: flex;
+    gap: 2rem;
+    background-color: $primary-box-colour;
+    padding: 2rem;
+    border-bottom: 1.5px solid $primary-background-colour;
+    &--top {
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  &__card-content {
+    font-size: 1rem;
+  }
+
+  &__card-header {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &__card-text {
+    margin: 0;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    padding-bottom: 1rem;
+    font-weight: 600;
+  }
+}
