@@ -1,7 +1,7 @@
 import "./Spaces.scss";
 import gaugeIcon from "../../assets/icons/gauge.png";
 import piggyIcon from "../../assets/icons/piggy-bank-solid.svg";
-import cardIcon from "../../assets/icons/credit-card-regular.svg";
+import cardIcon from "../../assets/icons/credit-cards-payment.png";
 
 export default function Spaces() {
   return (
