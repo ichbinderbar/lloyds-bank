@@ -10,7 +10,11 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div className="home__main-container">
+      <div
+        className={`home__main-container ${
+          showUpcomingPayments ? "home__main-container--hidden" : ""
+        }`}
+      >
         <MainAccountOverview />
         {showUpcomingPayments ? (
           <></>
