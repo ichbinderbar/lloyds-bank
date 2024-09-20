@@ -22,7 +22,7 @@ export default function HelpModal() {
   const handleHelpSelection = async () => {};
 
   return (
-    <>
+    <main className="modal">
       <img src={cancelIcon} alt="" className="modal__close" />
       <h1 className="modal__header">
         We’ve noticed overdue payments and loan activity. We’re here to make
@@ -34,36 +34,45 @@ export default function HelpModal() {
 
       <article className="modal__card-container">
         <img src={progressIcon} alt="" className="modal__card-icon" />
-        <h3 className="modal__card-header">View Progress Reports</h3>
-        <p className="modal__card-text">
-          Get clear updates to help you manage your finances.
-        </p>
+        <div className="modal__card-content">
+          <h3 className="modal__card-header">View Progress Reports</h3>
+          <p className="modal__card-text">
+            Get clear updates to help you manage your finances.
+          </p>
+        </div>
       </article>
 
       <article className="modal__card-container">
         <img src={appIcon} alt="" className="modal__card-icon" />
-        <h3 className="modal__card-header">Book an Appointment</h3>
-        <p className="modal__card-text">
-          Meet face-to-face or chat online with our staff for personalised help.
-        </p>
+        <div className="modal__card-content">
+          <h3 className="modal__card-header">Book an Appointment</h3>
+          <p className="modal__card-text">
+            Meet face-to-face or chat online with our staff for personalised
+            help.
+          </p>
+        </div>
       </article>
 
       <article className="modal__card-container">
         <img src={headIcon} alt="" className="modal__card-icon" />
-        <h3 className="modal__card-header">Mental Health Support</h3>
-        <p className="modal__card-text">
-          Find in-app resources to support your mental well-being.
-        </p>
+        <div className="modal__card-content">
+          <h3 className="modal__card-header">Mental Health Support</h3>
+          <p className="modal__card-text">
+            Find in-app resources to support your mental well-being.
+          </p>
+        </div>
       </article>
 
       <article className="modal__card-container">
         <img src={messageIcon} alt="" className="modal__card-icon" />
-        <h3 className="modal__card-header">Chat with Cleareye.ai</h3>
-        <p className="modal__card-text">
-          Talk about managing your account easily.
-        </p>
+        <div className="modal__card-content">
+          <h3 className="modal__card-header">Chat with Cleareye.ai</h3>
+          <p className="modal__card-text">
+            Talk about managing your account easily.
+          </p>
+        </div>
       </article>
-    </>
+    </main>
 
     //     <Modal
     //     className="modal"

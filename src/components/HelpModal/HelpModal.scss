@@ -1,0 +1,52 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography";
+
+.modal {
+  background-color: $primary-background-colour;
+  font-family: "Inter";
+
+  &__header {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__subheader {
+    @extend .modal__header;
+  }
+
+  &__close {
+    width: 1rem;
+  }
+
+  &__card-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: $primary-box-colour;
+    width: 21.75rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+  }
+
+  &__card-icon {
+    margin-left: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  &__card-content {
+    font-size: 1rem;
+  }
+
+  &__card-header {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &__card-text {
+    margin: 0;
+    line-height: 140%;
+    font-weight: 400;
+  }
+}
