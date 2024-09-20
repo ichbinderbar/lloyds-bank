@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Notification from "../../components/Notification/Notification";
 import MainAccountOverview from "../../components/MainAccountOverview/MainAccountOverview";
+import Spaces from "../../components/Spaces/Spaces";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <MainAccountOverview />
         <Notification />
       </div>
+      <Spaces />
     </div>
   );
 }

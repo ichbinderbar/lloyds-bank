@@ -39,6 +39,7 @@ export default function Notification() {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Help Selection"
+        overlayClassName="modal__overlay"
       >
         <div className="modal__container">
           <img
