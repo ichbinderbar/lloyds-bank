@@ -4,6 +4,7 @@ import patients from "../../data/patients.json";
 import CostumerCard from "../../components/CostumerCard/CostumerCard";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import SymptomList from "../../components/SymptomList/SymptomList";
+import "./CostumerServicePage.scss";
 
 const apiUrl = "https://openai-experimental-server-eff701d4fdb7.herokuapp.com/";
 
@@ -85,13 +86,19 @@ export default function CostumerServicePage() {
   };
 
   return (
-    <div>
+    <div className="costumer-service-page">
       <div className="search-container">
         <SearchBar handleInputChange={handleInputChange} />
       </div>
-      <CostumerCard patient={patient}></CostumerCard>
-      <button onClick={getResponse}>Get tips</button>
-      <SymptomList symptoms={symptoms} patient={patient} />
+      <div className="costumer-card">
+        <CostumerCard patient={patient} />
+      </div>
+      <button className="get-tips-button" onClick={getResponse}>
+        Get tips
+      </button>
+      <div className="symptom-list">
+        <SymptomList symptoms={symptoms} patient={patient} />
+      </div>
     </div>
   );
 }

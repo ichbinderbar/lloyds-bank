@@ -19,8 +19,6 @@ export default function HelpModal() {
     setIsOpen(false);
   };
 
-  const handleHelpSelection = async () => {};
-
   return (
     <Modal
       className="modal"

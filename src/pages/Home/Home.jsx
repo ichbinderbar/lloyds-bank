@@ -4,16 +4,27 @@ import MainAccountOverview from "../../components/MainAccountOverview/MainAccoun
 import Spaces from "../../components/Spaces/Spaces";
 import UpcomingPayments from "../../components/UpcomingPayments/UpcomingPayments";
 import Header from "../../components/Header/Header";
+import { useState } from "react";
 
 export default function Home() {
+  const [showUpcomingPayments, setUpcomingPayments] = useState(false);
+
   return (
     <div className="home">
       <Header />
-      <div className="home__main-container">
+      <div
+        className={`home__main-container ${
+          showUpcomingPayments ? "home__main-container--hidden" : ""
+        }`}
+      >
         <MainAccountOverview />
-        <Notification />
+        {showUpcomingPayments ? (
+          <></>
+        ) : (
+          <Notification setUpcomingPayments={setUpcomingPayments} />
+        )}
       </div>
-      <UpcomingPayments />
+      {showUpcomingPayments && <UpcomingPayments />}
       <Spaces />
     </div>
   );
