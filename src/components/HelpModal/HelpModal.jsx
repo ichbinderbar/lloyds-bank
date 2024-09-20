@@ -1,8 +1,9 @@
 import "./HelpModal.scss";
-import progressIcon from "../../assets/icons/progress-icon.svg";
-import appIcon from "../../assets/icons/appointment-icon.svg";
-import headIcon from "../../assets/icons/mental-health-icon.svg";
-import messageIcon from "../../assets/icons/message-icon.svg";
+import progressIcon from "../../assets/icons/progress-icon.png";
+import appIcon from "../../assets/icons/appointment-icon.png";
+import headIcon from "../../assets/icons/mental-health-icon.png";
+import messageIcon from "../../assets/icons/message-icon.png";
+import cancelIcon from "../../assets/icons/cancel.png";
 import Modal from "react-modal";
 import { useState } from "react";
 Modal.setAppElement("#root");
@@ -22,7 +23,46 @@ export default function HelpModal() {
 
   return (
     <>
-      <h1>test</h1>
+      <img src={cancelIcon} alt="" className="modal__close" />
+      <h1 className="modal__header">
+        We’ve noticed overdue payments and loan activity. We’re here to make
+        things easier for you.
+      </h1>
+      <h2 className="modal__subheader">
+        Please choose how you'd like us to support you:
+      </h2>
+
+      <article className="modal__card-container">
+        <img src={progressIcon} alt="" className="modal__card-icon" />
+        <h3 className="modal__card-header">View Progress Reports</h3>
+        <p className="modal__card-text">
+          Get clear updates to help you manage your finances.
+        </p>
+      </article>
+
+      <article className="modal__card-container">
+        <img src={appIcon} alt="" className="modal__card-icon" />
+        <h3 className="modal__card-header">Book an Appointment</h3>
+        <p className="modal__card-text">
+          Meet face-to-face or chat online with our staff for personalised help.
+        </p>
+      </article>
+
+      <article className="modal__card-container">
+        <img src={headIcon} alt="" className="modal__card-icon" />
+        <h3 className="modal__card-header">Mental Health Support</h3>
+        <p className="modal__card-text">
+          Find in-app resources to support your mental well-being.
+        </p>
+      </article>
+
+      <article className="modal__card-container">
+        <img src={messageIcon} alt="" className="modal__card-icon" />
+        <h3 className="modal__card-header">Chat with Cleareye.ai</h3>
+        <p className="modal__card-text">
+          Talk about managing your account easily.
+        </p>
+      </article>
     </>
 
     //     <Modal
