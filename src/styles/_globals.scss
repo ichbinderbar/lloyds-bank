@@ -1,4 +1,5 @@
 @use "./typography" as *;
+@use "./colors" as *;
 
 *,
 *::after,
@@ -8,6 +9,7 @@
 
 html,
 body {
+  background-color: $primary-background-colour;
   padding: 0;
   margin: 0;
   font-family: "Inter";
