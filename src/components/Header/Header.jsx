@@ -28,8 +28,8 @@ export default function Header() {
           />
         </div>
       </div>
-      <div className="header__botton">
-        <span className="header__button header__button--clicked"> Summary</span>
+      <div className="header__bottom">
+        <span className="header__button header__button-clicked"> Summary</span>
         <span className="header__button">Everyday</span>
         <span className="header__button">Save & Invest</span>
       </div>

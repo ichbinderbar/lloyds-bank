@@ -14,6 +14,10 @@
     justify-content: space-between;
   }
 
+  &__title {
+    font-size: 1.5rem;
+  }
+
   &__container-right {
     display: flex;
     flex-direction: row;
@@ -27,16 +31,31 @@
   &__img-question {
     height: 100%;
     width: 100%;
+    padding: 0.1rem;
   }
 
   &__img-question-div {
     border: 1px solid black;
-    height: 1rem;
-    width: 1rem;
+    height: 1.2rem;
+    width: 1.2rem;
     border-radius: 50px;
+    margin-right: 0.5rem;
   }
 
-  &__title {
-    font-size: 1rem;
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  &__button {
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  &__button-clicked {
+    background-color: black;
+    color: white;
   }
 }
